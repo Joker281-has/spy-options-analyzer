@@ -1,0 +1,30 @@
+{
+  "name": "spy-options-analyzer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:functions": "netlify dev",
+    "test:fetch": "node scripts/testFetch.js"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "axios": "^1.4.0",
+    "chart.js": "^4.4.0",
+    "react-chartjs-2": "^5.2.0",
+    "lodash.debounce": "^4.0.8",
+    "classnames": "^2.3.2",
+    "yahoo-finance2": "^3.11.0"
+  },
+  "devDependencies": {
+    "vite": "4.4.9",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "5.3.3",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.9",
+    "@types/lodash.debounce": "^4.0.6"
+  }
+}

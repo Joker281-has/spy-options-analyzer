@@ -1,0 +1,46 @@
+{
+  "source": "sample",
+  "optionsCount": 2,
+  "series": [
+    { "date": "2026-01-09T00:00:00.000Z", "close": 440, "open": 439, "high": 441, "low": 438, "volume": 1000000 },
+    { "date": "2026-01-10T00:00:00.000Z", "close": 442, "open": 440, "high": 443, "low": 440, "volume": 1200000 }
+  ],
+  "indicators": { 
+    "sma20": [null,null,440.5],
+    "rsi14": [null,null,55],
+    "histVol30": 0.18
+  },
+  "expirations": ["2026-01-16T00:00:00.000Z","2026-02-20T00:00:00.000Z"],
+  "optionsSample": [
+    {
+      "contractSymbol": "SPY  260121C440",
+      "strike": 440,
+      "type": "call",
+      "expiration": "2026-01-16T00:00:00.000Z",
+      "dte": 5,
+      "lastPrice": 2.5,
+      "bid": 2.4,
+      "ask": 2.6,
+      "mid": 2.5,
+      "impliedVol": 0.18,
+      "volume": 120,
+      "openInterest": 300,
+      "greeks": { "delta": 0.52, "gamma": 0.02, "theta": -0.01, "vega": 0.12 }
+    },
+    {
+      "contractSymbol": "SPY  260121P435",
+      "strike": 435,
+      "type": "put",
+      "expiration": "2026-01-16T00:00:00.000Z",
+      "dte": 5,
+      "lastPrice": 1.2,
+      "bid": 1.1,
+      "ask": 1.3,
+      "mid": 1.2,
+      "impliedVol": 0.22,
+      "volume": 80,
+      "openInterest": 150,
+      "greeks": { "delta": -0.48, "gamma": 0.018, "theta": -0.005, "vega": 0.09 }
+    }
+  ]
+}

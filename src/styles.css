@@ -1,0 +1,34 @@
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 0; margin: 0; background: #f9f9f9; }
+.app { padding: 18px; max-width: 1400px; margin: 0 auto; }
+header { display:flex; align-items:baseline; justify-content:space-between; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 12px; }
+header h1 { margin: 0; }
+.meta { color: #666; font-size: 14px }
+.controls { background: white; padding: 12px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 12px; }
+.layout { display:flex; gap: 18px; margin-top: 18px }
+.left { flex: 1; background: white; padding: 12px; border-radius: 4px; border: 1px solid #eee; }
+.right { flex: 1; background: white; padding: 12px; border-radius: 4px; border: 1px solid #eee; overflow-x: auto; }
+.chart { height: 300px; }
+
+.trade-table { width: 100%; }
+.table-controls { display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px; font-size: 13px; color: #666; }
+.pagination { display:flex; gap: 8px; }
+.pagination button { padding: 6px 12px; border: 1px solid #ccc; background: white; border-radius: 4px; cursor: pointer; }
+.pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
+.pagination button:hover:not(:disabled) { background: #f0f0f0; }
+
+.trade-table table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.trade-table th { background: #f0f0f0; font-weight: 600; text-align: left; cursor: default; }
+.trade-table th.sortable { cursor: pointer; user-select: none; }
+.trade-table th.sortable:hover { background: #e0e0e0; }
+.trade-table th, .trade-table td { padding: 8px; border: 1px solid #eee; }
+.trade-table td.score { font-weight: 600; color: #1f77b4; }
+.trade-table tr.weak { opacity: 0.5; }
+
+.state { padding: 18px; text-align: center; }
+.state.error { color: darkred; background: #ffe6e6; border: 1px solid #cc0000; border-radius: 4px; }
+
+.filters { display:flex; gap: 12px; align-items:center; flex-wrap: wrap; }
+.filters label { display:flex; gap:8px; align-items:center; white-space: nowrap; }
+.filters input[type=range] { width: 100px; }
+.filters input[type=text], .filters select { padding:6px 8px; border: 1px solid #ccc; border-radius: 4px; }
+
