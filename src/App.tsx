@@ -9,6 +9,7 @@ import ErrorBoundary from './components/ErrorBoundary'
 import { TradeSignals } from './components/TradeSignals'
 import { AlertConfigPanel } from './components/AlertConfig'
 import { PortfolioTracker } from './components/PortfolioTracker'
+import { DataImporter } from './components/DataImporter'
 import { OptionContract } from './types'
 
 type OptionItem = {
@@ -27,7 +28,7 @@ type OptionItem = {
   greeks: { delta: number | null; gamma: number | null; theta: number | null; vega: number | null }
 }
 
-type ActiveTab = 'dashboard' | 'signals' | 'alerts' | 'portfolio'
+type ActiveTab = 'dashboard' | 'signals' | 'alerts' | 'portfolio' | 'import'
 
 export default function App() {
   const [loading, setLoading] = useState(true)
@@ -95,6 +96,7 @@ export default function App() {
             { id: 'signals', label: '🎯 Signals' },
             { id: 'alerts', label: '🔔 Alerts' },
             { id: 'portfolio', label: '💼 Portfolio' },
+            { id: 'import', label: '📥 Import Data' },
           ].map(tab => (
             <button
               key={tab.id}
@@ -142,6 +144,13 @@ export default function App() {
         {activeTab === 'portfolio' && (
           <section className="tab-content">
             <PortfolioTracker contracts={contracts} />
+          </section>
+        )}
+
+        {/* Import Data Tab */}
+        {activeTab === 'import' && (
+          <section className="tab-content">
+            <DataImporter onContractsImported={(imported) => console.log('Imported:', imported)} />
           </section>
         )}
       </div>
