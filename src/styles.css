@@ -1,6 +1,6 @@
 body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 0; margin: 0; background: #f9f9f9; }
 .app { padding: 18px; max-width: 1400px; margin: 0 auto; }
-header { display:flex; align-items:baseline; justify-content:space-between; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 12px; }
+header { display:flex; align-items:baseline; justify-content:space-between; border-bottom: 1px solid #ddd; padding-bottom: 12px; margin-bottom: 12px; }     
 header h1 { margin: 0; }
 .meta { color: #666; font-size: 14px }
 .controls { background: white; padding: 12px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 12px; }
@@ -32,3 +32,10 @@ header h1 { margin: 0; }
 .filters input[type=range] { width: 100px; }
 .filters input[type=text], .filters select { padding:6px 8px; border: 1px solid #ccc; border-radius: 4px; }
 
+/* Tab Navigation Styles */
+.tab-navigation { display: flex; gap: 4px; border-bottom: 2px solid #ddd; margin: 12px 0; flex-wrap: wrap; }
+.tab-button { padding: 10px 16px; background: transparent; border: none; cursor: pointer; font-size: 14px; font-weight: 500; color: #666; transition: all 0.3s; border-bottom: 3px solid transparent; margin-bottom: -2px; }
+.tab-button:hover { color: #333; background: #f0f0f0; }
+.tab-button.active { color: #1f77b4; border-bottom-color: #1f77b4; }
+
+.tab-content { background: white; padding: 12px; border-radius: 4px; border: 1px solid #eee; margin-top: 12px; }

@@ -10,21 +10,29 @@
     "test:fetch": "node scripts/testFetch.js"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "@tanstack/react-table": "^8.21.3",
+    "@types/papaparse": "^5.5.2",
     "axios": "^1.4.0",
     "chart.js": "^4.4.0",
-    "react-chartjs-2": "^5.2.0",
-    "lodash.debounce": "^4.0.8",
     "classnames": "^2.3.2",
-    "yahoo-finance2": "^3.11.0"
+    "date-fns": "^4.1.0",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.562.0",
+    "papaparse": "^5.5.3",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.6.0",
+    "vite-plugin-pwa": "^1.2.0",
+    "yahoo-finance2": "^3.11.0",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
-    "vite": "4.4.9",
-    "@vitejs/plugin-react": "^4.0.0",
-    "typescript": "5.3.3",
+    "@types/lodash.debounce": "^4.0.6",
     "@types/react": "18.2.25",
     "@types/react-dom": "18.2.9",
-    "@types/lodash.debounce": "^4.0.6"
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "5.3.3",
+    "vite": "4.4.9"
   }
 }
